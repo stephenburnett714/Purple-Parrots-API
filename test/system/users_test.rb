@@ -17,6 +17,7 @@ class UsersTest < ApplicationSystemTestCase
     fill_in "Avatar", with: @user.avatar
     fill_in "Email", with: @user.email
     fill_in "Password digest", with: @user.password_digest
+    fill_in "Score", with: @user.score
     fill_in "User name", with: @user.user_name
     click_on "Create User"
 
@@ -31,6 +32,7 @@ class UsersTest < ApplicationSystemTestCase
     fill_in "Avatar", with: @user.avatar
     fill_in "Email", with: @user.email
     fill_in "Password digest", with: @user.password_digest
+    fill_in "Score", with: @user.score
     fill_in "User name", with: @user.user_name
     click_on "Update User"
 
